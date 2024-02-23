@@ -10,10 +10,15 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="nav-header">
             <div class="logo nav-logo">
                 <a href="#">Food<span>man</span></a>                
@@ -35,7 +40,7 @@
             </button>
         </div>
     </nav>
-    <div class="section-container header-container" id="home">
+    <div class="section-container header-container hidden" id="home">
         <div class="header-content">
             <h1 class="section-header">Meet,Eat & Enjoy The <span>True Taste</span></h1>
             <p class="section-description">Discover the true essence of culinary delight as you meet, eat, and savor the authentic flavors that define our passion for food.</p>
@@ -49,7 +54,7 @@
         
     </div>
 
-    <section class="section-container special-container" id="special">
+    <section class="section-container special-container  hidden" id="special">
         <h2 class="section-header">Our Special Dish</h2>
         <p class="section-description">Each dish promises an unforgettable dining experience, blending innovation with tradition to delight your senses.</p>
         <div class="special-grid">
@@ -57,7 +62,7 @@
                 <img src="./assets/images/special-1.png" alt="">
                 <h4 class="section-header">Veg Curry</h4>
                 <p class="section-description">
-                    Aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.
+                    Aromatic curry sauce with mixed veggies like potatoes, cauliflower, and beans for a hearty, flavorful dish.Aromatic curry.
                 </p>
                 <div class="special-footer">
                     <p class="price">Rs. 12.5</p>
@@ -68,7 +73,7 @@
                 <img src="./assets/images/special-2.png" alt="">
                 <h4 class="section-header">Veg Stir Fry</h4>
                 <p class="section-description">
-                    Colorful array of fresh vegetables in a flavorful blend of spices and sauces.
+                    Colorful array of fresh vegetables in a flavorful blend of spices and sauces.Colorful array of fresh vegetables in a flavorful blend.
                 </p>
                 <div class="special-footer">
                     <p class="price">Rs. 18.5</p>
@@ -89,7 +94,7 @@
         </div>
     </section>
 
-    <section class="section-container banner-container">
+    <section class="section-container banner-container  hidden">
         <div class="banner-card">
             <span class="banner-icon"><i class="ri-bowl-fill"></i></span>
             <h4>Order Your Food</h4>
@@ -110,7 +115,7 @@
         </div>
     </section>
 
-    <section class="chef" id="chef">
+    <section class="chef hidden" id="chef">
         <img src="./assets/images/topping.png" alt="" class="chef-bg">
         <div class="section-container chef-container">
             <div class="chef-img">
@@ -135,7 +140,63 @@
         </div>
     </section>
 
-    <footer class="footer" id="contact">
+    <section class="section-container client__container  hidden" id="client">
+        <h2 class="section-header">What Our Clients Are Saying</h2>
+        <p class="section-description">
+          Discover firsthand experiences and testimonials from our valued patrons.
+          Explore the feedback and reviews that showcase our commitment to
+          quality, service, and customer satisfaction.
+        </p>
+        <div class="client__swiper">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <p>
+                    FoodMan's culinary expertise never fails to impress! Every
+                    dish is a masterpiece, bursting with flavor and freshness.
+                  </p>
+                  <img src="assets/images/client-1.jpg" alt="client" />
+                  <h4>Anil Ambani</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <p>
+                    I always turn to FoodMan for a quick and delicious meal. Their
+                    efficient service and mouthwatering options never disappoint!
+                  </p>
+                  <img src="assets/images/client-2.jpg" alt="client" />
+                  <h4>Bhuvana Bam</h4>
+                  <h5>Food Blogger</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client__card">
+                  <p>
+                    FoodMan has become my go-to for all my catering needs. Their
+                    attention to detail and exceptional customer service make
+                    every event a success.
+                  </p>
+                  <img src="assets/images/client-3.jpg" alt="client" />
+                  <h4>Chang Wookie</h4>
+                  <h5>Event Planner</h5>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-button-prev prev-button"></div>
+  <div class="swiper-button-next next-button"></div>
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="footer hidden" id="contact">
         <div class="section__container footer__container">
           <div class="footer__col">
             <div class="logo footer__logo">
@@ -144,6 +205,9 @@
             <p class="section__description">
               Embark on a gastronomic journey with FoodMan, where every bite tells
               a story and every dish is crafted to perfection.
+            </p>
+            <p>Phone no: +91 9900140160
+                <br>Email: <a href="www.abc@gmail.com">abc@gmail.com</a>
             </p>
           </div>
           <div class="footer__col">
@@ -175,10 +239,10 @@
             </ul>
           </div>
         </div>
-        <div class="footer__bar">
-          Copyright © 2024 Web Design Mastery. All rights reserved.
-        </div>
+        
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./javascript/main.js"></script>
+    
 </body>
 </html>
